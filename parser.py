@@ -2,7 +2,7 @@ import re
 from datetime import datetime
 from collections import Counter
 
-# Пример строки: 127.0.0.1 - - [10/Oct/2023:13:55:36 +0000] "GET /index.html HTTP/1.1" 200 2326
+
 log_pattern = re.compile(
     r'(?P<ip>\d+\.\d+\.\d+\.\d+)\s.*\[(?P<datetime>[^\]]+)\]\s"(?P<request>.*?)"\s(?P<status>\d+)'
 )
